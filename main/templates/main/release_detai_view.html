@@ -1,0 +1,11 @@
+{% extends 'main/layout.html'%}
+
+{% block title %}Release{% endblock %}
+
+{% block content %}
+  <h1>{{ release.title }}</h1>
+  <p class="card-text py-3">{{ release.text }}</p>
+  <div class="row mt-4">
+  {% include 'main/article_release.html' %}
+  </div>
+{% endblock %}
